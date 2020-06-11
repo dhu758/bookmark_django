@@ -8,6 +8,7 @@ from .models import Bookmark
 
 class BookmarkListView(ListView):
     model = Bookmark
+    paginate_by=1   #한 페이지에 보이는 게시글 수
 
 class BookmarkCreateView(CreateView):
     model = Bookmark
